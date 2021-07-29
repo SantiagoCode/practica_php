@@ -43,6 +43,78 @@
         echo $z;
         
         echo "</br>";
+
+
+
+        // ESTRUCTURAS DE CONTROL DE FLUJO
+        echo '<h1 class="titulo">Aqui empiezan las estructuras de control de flujo</h1>';
+        
+        // if
+        echo '<h2>If</h2>';
+        /**¿Por que en el comparativo Igual no funciona y en el Identico si? */
+        if ($a == $b){
+            echo "La variable A es igual a la variable B";
+        } else {
+            echo "La variable A es distinta a la variable B";
+        }
+
+    echo "</br>";
+
+        if ($a === $b){
+            echo "La variable A es igual a la variable B";
+        } else {
+            echo "La variable A es distinta a la variable B";
+        }
+
+        // for
+        echo '<h2>For</h2>';
+        for ($x = 0; $x <= 10; $x++) {
+            echo $x;
+            echo "</br>";
+
+            if ($x < 10) {
+                echo "necesitas subir un piso mas";
+            } else {
+                echo "Excelente, has llegado al decimo piso";
+
+            }
+
+            echo "</br>";
+        }
+        
+        echo '</br>';
+
+        // foreach
+        echo '<h2>foreach</h2>';
+
+        $myArray = ['Santiago','Sam','Andres'];
+
+        echo 'En mi familia somos 3 hermanos:';
+        echo '</br>';
+
+        foreach ($myArray as $bro) {
+            echo $bro;
+            echo '</br>';
+        }
+
+        
+        // while
+        echo '<h2>while</h2>';
+
+        $x = 10;
+        while ($x < 20) {
+            echo "Sube otro piso, falta poco";
+            echo '</br>';
+            $x++;
+
+            if ($x == 20) {
+                echo "felicidades, ya has llegado al piso 20, ahora solo faltan 80 pisos mas";
+            }
+        }
+        
+        echo '</br>';
+
+        
     ?>
 
 </body>
