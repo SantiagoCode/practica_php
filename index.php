@@ -103,11 +103,15 @@
 
         $x = 10;
         while ($x < 20) {
+            echo $x;
+            echo '</br>';
             echo "Sube otro piso, falta poco";
             echo '</br>';
             $x++;
 
             if ($x == 20) {
+                echo $x;
+                echo '</br>';
                 echo "felicidades, ya has llegado al piso 20, ahora solo faltan 80 pisos mas";
             }
         }
